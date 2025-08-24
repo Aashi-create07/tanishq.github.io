@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://127.0.0.1:8000/index/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./project_files/bootstrap.css">
+    <link rel="stylesheet" href="./project_files/all.min.css">
+    <style>
+        .bg-mycolor1 {
+            background: #800000;
+        }
+
+        .bg-mycolor2 {
+            background: #FFD700;
+        }
+
+        .text-color1 {
+            color: #800000;
+        }
+
+        .aboutcontent {
+            font-size: 18px;
+        }
+
+        .text-color2 {
+            color: #FFD700;
+        }
+
+        .ic {
+            color: #FFD700;
+            height: 28px;
+            width: 28px;
+            text-align: center;
+            line-height: 28px;
+            border: 1px solid #FFD700;
+            transition: .4s;
+        }
+
+        .ic:hover {
+            transform: translateY(-5px);
+            transition: .1s;
+            background: #800000;
+            color: white;
+        }
+
+        #menu {
+            background: transparent !important;
+        }
+
+        #menu ul li a {
+            color: white !important;
+        }
+
+        .slider {
+            min-height: 300px;
+            background: linear-gradient(45deg, rgba(0, 0, 0, .6), rgba(245, 0, 87, .3)),
+            url("/static/images/3.webp");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .aboutcontent {
+            font-size: 18px;
+        }
+
+        .imgpic {
+            transition: 2s;
+            height: 200px;
+            width: 100%;
+        }
+
+        .imgpic:hover {
+            transform: scale(1.1);
+            transition: 2s;
+        }
+
+        .ufooter {
+            min-height: 250px;
+            background: black;
+        }
+
+        .bfooter {
+            height: 50px;
+            background: black;
+        }
+
+        .imgteam {
+            height: 300px;
+
+        }
+
+        .imgabout {
+            height: 250px;
+        }
+
+        .catic {
+            height: 60px;
+            width: 60px;
+            font-size: 30px;
+            border: 1px solid black;
+            border-radius: 7px;
+            line-height: 60px;
+            transition: 2s;
+        }
+
+        .catic:hover {
+            background: #333333;
+            color: white;
+            transition: 2s;
+        }
+
+        .catimg {
+            height: 150px;
+        }
+
+        .Popularcat {
+            border: 0px;
+            transition: 2s;
+        }
+
+        .Popularcat:hover {
+            transform: scale(1.09);
+            transition: 2s;
+        }
+
+        .txt {
+            height: 50px;
+            margin-bottom: 4%;
+            background: transparent !important;
+            border: none !important;
+            border-bottom: 2px solid white !important;
+            border-radius: 0px !important;
+        }
+
+        .ta {
+            height: 80px;
+            margin-bottom: 4%;
+            background: transparent !important;
+            border-bottom: 2px solid white !important;
+        }
+
+        ::placeholder {
+            color: #f50057 !important;
+        }
+
+        .btn1 {
+            height: 50px !important;
+            color: white !important;
+        }
+
+        .login {
+            background: rgba(0, 0, 0, .3);
+            backdrop-filter: blur(5px);
+
+        }
+        .serviceic
+        {
+            height: 50px;
+            width: 50px;
+            font-size: 25px;
+            line-height: 50px;
+            color: #800000;
+        }
+        .contactimg
+        {
+            height: 450px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!--start header-->
+        <div class="row header ">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10 py-4">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="fs-2"><i class="fa-solid fa-truck"></i>THE <b class="text-color1">OUTDOOROLOGY</b>
+                        </div>
+                    </div>
+                    <div class="col-sm-2"><b><a href="mailto:tanishqojha@gmail.com"><i class="fa-solid fa-envelope ic"></i></a>mail
+                            us</b><br>tanishqojha75@gmail.com</div>
+                    <div class="col-sm-2"><b><i class="fa-solid fa-phone ic"></i>call us</b><br>9125040027</div>
+                    <div class="col-sm-3">
+                       <a href="https://www.facebook.com/tanishq.ojha.75"> <i class="fa-brands fa-square-facebook ic"></i></a>
+                        
+                        <i class="fa-brands fa-youtube ic"></i>
+                        <a href="https://www.linkedin.com/in/tanishq-ojha"><i class="fa-brands fa-linkedin ic"></i></a>
+                        <a href="https://instagram.com/aaghanya_ojha"><i class="fa-brands fa-instagram ic"></i></a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="http://127.0.0.1:8000/admin/" class="bg-mycolor1 btn text-light"><i class="fa-solid fa-key"></i> Admin Login</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        <!--end header-->
+        <!--start menu-->
+
+        <div class="row menu bg-mycolor1">
+            <div class="col-sm-8 mx-auto">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary" id="menu">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="http://127.0.0.1:8000/index/#"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/index/"><i class="fa-solid fa-house ib "></i> Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="http://127.0.0.1:8000/package/">packages</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="http://127.0.0.1:8000/aboutus/">about us</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="http://127.0.0.1:8000/category/">Traveling Blogs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="http://127.0.0.1:8000/register/">Register</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="http://127.0.0.1:8000/login/"><i class="fa-solid fa-key"></i> user login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="http://127.0.0.1:8000/services/"><i class="fa-solid fa-right-to-bracket ib"></i>
+                                        services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="http://127.0.0.1:8000/gallery/"><i class="fa-brands fa-product-hunt ib"></i>
+                                        gallery</a>
+                                </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="http://127.0.0.1:8000/contact/">contact &amp; support</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="http://127.0.0.1:8000/team/"><i class="fa-solid fa-phone ib"></i> Team</a>
+                                
+                                <!--
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                                </li>
+                            </ul>
+                            -->
+
+
+
+                        </li></ul></div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--end menu-->
+        <div class="row">
+            <div class="col-sm-12" style="min-height: 450px;">
+                
+
+<div class="row slider">
+  <div class="col-sm-10 mx-auto">
+    <div class="row">
+      <div class="col-sm-7 pt-5">
+        <div class="fs-2 text-center text-light text-uppercase mt-5">THE LOGIC OF<b class="text-color1 px-4">OUTDOOROLOGY
+            <i class="fa-solid fa-truck"></i>
+          </b></div>
+
+        <div class="text-center text-light">"Every mile brings a new smile. From city lights to mountain heights, the world calls and I wander.
+           No map, just moments. Traveling not to escape life—but so life doesn't escape me."</div>
+
+        <a href="http://127.0.0.1:8000/index/#" class="btn bg-mycolor1 text-light mx-auto d-block w-25 mt-5 rounded-pill">Register Now</a>
+
+      </div>
+      <div class="col-sm-5 login my-5 p-5">
+
+        <span class="position-absolute top-0 translate-middle start-50 bg-mycolor1 p-2 py-1 px-2 fs-2 text-light rounded-pill border border-2 border-light">Contact
+          Us</span>
+
+        <form method="post">
+
+          <input type="hidden" name="csrfmiddlewaretoken" value="nxeyUzwmQoRVryb9jYvROaZ25wMNh0qJFardkWFsEZATAtxivuqSlGqiYtCCBXEF">
+          <input type="text" class="form-control txt" required="" placeholder="Name.." name="name">
+
+
+
+          <input type="email" class="form-control txt" required="" placeholder="Email.." name="email">
+
+
+
+          <input type="number" class="form-control txt" required="" placeholder="Mobile.." name="mob">
+
+          <textarea class="form-control ta" required="" placeholder="Message" name="msg"></textarea>
+
+          <input type="submit" value="Save" class=" form-control bg-mycolor1 btn1">
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<!--start package section-->
+<!--start page heading-->
+<hr class="w-50 mx-auto">
+<p class=" text-center fs-3 mt-3">OUR<b class="text-color1"> TOP PACKAGES <i class="fa-solid fa-user"></i></b></p>
+<hr class="w-50 mx-auto">
+<!--end page heading-->
+<div class="row">
+  <div class="col-sm-12" style="height: 600px; overflow-y: auto;">
+    <div class="row">
+
+      
+      <!--start packages -->
+      <div class="col-sm-3">
+        <div class="card shadow-lg my-3 p-3 fs-5" style="text-align: justify;font-size: 13px !important;">
+          <span class="bg-mycolor2 badge text-light position-absolute top-0 start-50 translate-middle"><i class="fa-solid fa-indian-rupee-sign"></i>55999.0</span>
+          <img src="./project_files/10.jpeg" class="card-img-top">
+                    <p>static/package/10.jpeg</p>
+          <h5 class="card-title">Matrix Package</h5>
+          <b>The Matrix package contains functions that extend R to support highly dense or sparse matrices. It provides efficient access to BLAS (Basic Linear Algebra Subroutines), Lapack (dense matrix), TAUCS (sparse matrix) and UMFPACK (sparse matrix) routines.</b>
+          <p class="card-text" style="height: 150px;overflow-y: auto;">The Matrix package contains functions that extend R to support highly dense or sparse matrices. It provides efficient access to BLAS (Basic Linear Algebra Subroutines), Lapack (dense matrix), TAUCS (sparse matrix) and UMFPACK (sparse matrix) routines.</p>
+          <p class="card-text">
+            <b>Price :</b><i class="fa-solid fa-indian-rupee-sign"></i><s></s> per person
+          </p>
+          <p class="card-text">
+            <small class="badge bg-mycolor1 float-start"><i class="fa-solid fa-calender"></i> :
+              30-07-2025</small>
+            <small class="badge bg-mycolor1 float-end">July 31, 2025</small>
+          </p><p class="card-text"><small class="badge bg-mycolor1 float-end">kanpur</small></p>
+          <p></p>
+          <a href="http://127.0.0.1:8000/blogger/package?dprice=55999.0&amp;pkg=Matrix%20Package" class="btn bg-mycolor1 text-light w-50">book now →</a>
+        </div>
+      </div>
+      <!--end packages -->
+      
+      <!--start packages -->
+      <div class="col-sm-3">
+        <div class="card shadow-lg my-3 p-3 fs-5" style="text-align: justify;font-size: 13px !important;">
+          <span class="bg-mycolor2 badge text-light position-absolute top-0 start-50 translate-middle"><i class="fa-solid fa-indian-rupee-sign"></i>75923.0</span>
+          <img src="./project_files/KANPUR1.jpeg" class="card-img-top">
+                    <p>static/package/KANPUR1.jpeg</p>
+          <h5 class="card-title">Quater Package</h5>
+          <b>Quarterly planning is a way to break annual planning into smaller parts, meeting once every three months (four times per year) to set goals, establish metrics, and review the previous quarter's achievements and points of growth.</b>
+          <p class="card-text" style="height: 150px;overflow-y: auto;">Quarterly planning is a way to break annual planning into smaller parts, meeting once every three months (four times per year) to set goals, establish metrics, and review the previous quarter's achievements and points of growth.</p>
+          <p class="card-text">
+            <b>Price :</b><i class="fa-solid fa-indian-rupee-sign"></i><s></s> per person
+          </p>
+          <p class="card-text">
+            <small class="badge bg-mycolor1 float-start"><i class="fa-solid fa-calender"></i> :
+              30-07-2025</small>
+            <small class="badge bg-mycolor1 float-end">July 31, 2025</small>
+          </p><p class="card-text"><small class="badge bg-mycolor1 float-end">Lucknow</small></p>
+          <p></p>
+          <a href="http://127.0.0.1:8000/blogger/package?dprice=75923.0&amp;pkg=Quater%20Package" class="btn bg-mycolor1 text-light w-50">book now →</a>
+        </div>
+      </div>
+      <!--end packages -->
+      
+      <!--start packages -->
+      <div class="col-sm-3">
+        <div class="card shadow-lg my-3 p-3 fs-5" style="text-align: justify;font-size: 13px !important;">
+          <span class="bg-mycolor2 badge text-light position-absolute top-0 start-50 translate-middle"><i class="fa-solid fa-indian-rupee-sign"></i>89999.0</span>
+          <img src="./project_files/3.webp" class="card-img-top">
+                    <p>static/package/3.webp</p>
+          <h5 class="card-title">Golden Package</h5>
+          <b>in the context of health checkups, a Golden Package might involve comprehensive tests of all body systems. In test preparation, it might refer to a premium course with detailed feedback and assessments.</b>
+          <p class="card-text" style="height: 150px;overflow-y: auto;">The "Golden Package" can refer to several things, depending on the context. It might be a master health checkup, a travel package, a test prep course, or even a website design package</p>
+          <p class="card-text">
+            <b>Price :</b><i class="fa-solid fa-indian-rupee-sign"></i><s></s> per person
+          </p>
+          <p class="card-text">
+            <small class="badge bg-mycolor1 float-start"><i class="fa-solid fa-calender"></i> :
+              30-07-2025</small>
+            <small class="badge bg-mycolor1 float-end">July 31, 2025</small>
+          </p><p class="card-text"><small class="badge bg-mycolor1 float-end">varanasi</small></p>
+          <p></p>
+          <a href="http://127.0.0.1:8000/blogger/package?dprice=89999.0&amp;pkg=Golden%20Package" class="btn bg-mycolor1 text-light w-50">book now →</a>
+        </div>
+      </div>
+      <!--end packages -->
+      
+      <!--start packages -->
+      <div class="col-sm-3">
+        <div class="card shadow-lg my-3 p-3 fs-5" style="text-align: justify;font-size: 13px !important;">
+          <span class="bg-mycolor2 badge text-light position-absolute top-0 start-50 translate-middle"><i class="fa-solid fa-indian-rupee-sign"></i>7599.0</span>
+          <img src="./project_files/1.webp" class="card-img-top">
+                    <p>static/package/1.webp</p>
+          <h5 class="card-title">Silver Package</h5>
+          <b>Silver Package depends on the context. It could refer to the Central Government Salary Package (Silver) offered by SBI, a Silver Health Package from 1mg, or a Silver Package for DIY crafts.</b>
+          <p class="card-text" style="height: 150px;overflow-y: auto;">Silver Package depends on the context. It could refer to the Central Government Salary Package (Silver) offered by SBI, a Silver Health Package from 1mg, or a Silver Package for DIY crafts.</p>
+          <p class="card-text">
+            <b>Price :</b><i class="fa-solid fa-indian-rupee-sign"></i><s></s> per person
+          </p>
+          <p class="card-text">
+            <small class="badge bg-mycolor1 float-start"><i class="fa-solid fa-calender"></i> :
+              30-07-2025</small>
+            <small class="badge bg-mycolor1 float-end">July 31, 2025</small>
+          </p><p class="card-text"><small class="badge bg-mycolor1 float-end">kanpur</small></p>
+          <p></p>
+          <a href="http://127.0.0.1:8000/blogger/package?dprice=7599.0&amp;pkg=Silver%20Package" class="btn bg-mycolor1 text-light w-50">book now →</a>
+        </div>
+      </div>
+      <!--end packages -->
+      
+    </div>
+  </div>
+</div>
+<!--end package section-->
+<!--start page heading-->
+<hr class="w-50 mx-auto">
+<p class=" text-center fs-3 mt-3">ABOUT<b class="text-color1"> US <i class="fa-solid fa-user"></i></b></p>
+<hr class="w-50 mx-auto">
+<!--end page heading-->
+<!--start about us-->
+<div class="row about us">
+
+  <div class="col-sm-10 mx-auto">
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="./project_files/1(1).webp" class="img-thumbnail w-100 imgabout">
+      </div>
+      <div class="col-sm-6">
+        <p class="p-3 aboutcontent w-20 text-center"><b class="text-color2 bg-mycolor1 ">welcome</b></p>
+        <p class="p-3 aboutcontent">For an adventurous traveler, safety remains paramount, but it’s
+                             intertwined with access to reliable gear and well-maintained trails. Accommodation needs to be practical, 
+                             perhaps a cozy cabin or a durable tent, offering proximity to the activity, not necessarily luxury. Transportation 
+                             is often self-powered hiking boots, bikes,
+                             or kayaks making route planning and navigation crucial.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end about us-->
+
+<!--start product-->
+<div class="row product"></div>
+<!--end product-->
+<!--start icon-->
+<div class="row intro"></div>
+<!--end icon-->
+<!--start contact us-->
+<div class="row contactus"></div>
+<!--end contact us-->
+
+
+
+
+            </div>
+        </div>
+
+        <!--start u footer-->
+        <div class="row ufooter ">
+            <div class="col-sm-10 mx-auto">
+                <div class="row p-4">
+                    <div class="col-sm-3 text-light ps-3">
+                        <h5>About Website</h5>
+                        <p style="font-size:12px">For an adventurous traveler, safety remains paramount, but it’s
+                             intertwined with access to reliable gear and well-maintained trails. Accommodation needs to be practical, 
+                             perhaps a cozy cabin or a durable tent, offering proximity to the activity, not necessarily luxury. </p>
+                    </div>
+                    <div class="col-sm-3 text-light ps-5">
+                        <p><a href="http://127.0.0.1:8000/index/"> <i class="fa-solid fa-arrow-right"></i> Home </a></p>
+                        <p> <a href="http://127.0.0.1:8000/aboutus/"><i class="fa-solid fa-arrow-right"></i> About us </a></p>
+                        <p> <a href="http://127.0.0.1:8000/team/"><i class="fa-solid fa-arrow-right"></i> Our Team </a></p>
+                        <p><a href="http://127.0.0.1:8000/services/"><i class="fa-solid fa-arrow-right"></i> Our services </a></p>
+                        <p> <a href="http://127.0.0.1:8000/contact/"><i class="fa-solid fa-arrow-right"></i> Contact us </a></p>
+                    </div>
+                    <div class="col-sm-3 text-light ps-5">
+                        <p><a href="http://127.0.0.1:8000/package/"> <i class="fa-solid fa-arrow-right"></i> Packages </a></p>
+                        <p><a href="http://127.0.0.1:8000/gallery/"> <i class="fa-solid fa-arrow-right"></i> Our Gallery </a></p>
+                        <p><a href="http://127.0.0.1:8000/category/"> <i class="fa-solid fa-arrow-right"></i> Our Blogs </a></p>
+                        <p><a href="http://127.0.0.1:8000/register/"> <i class="fa-solid fa-arrow-right"></i> Registration </a></p>
+                        <p><a href="http://127.0.0.1:8000/login/"> <i class="fa-solid fa-arrow-right"></i> Login </a></p>
+                    </div>
+                    <div class="col-sm-3 text-light">
+                        <h5>Get In Touch</h5>
+                        <p><i class="fa-solid fa-location-dot"></i>nd tiwari road, tedhi puliya, lucknow 226022</p>
+                        <p><i class="fa-solid fa-phone"></i> +91 92250XXXXX</p>
+                        <p><i class="fa-solid fa-phone"></i> +91 92250XXXXX</p>
+                        <p>
+                            <a href="https://instagram.com/aaghanya_ojha"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/tanishq.ojha.75"><i class="fa-square-facebook"></i></a>
+                            <a href="http://127.0.0.1:8000/index/"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://www.linkedin.com/in/tanishq-ojha"><i class="fa-brands fa-linkedin"></i></a>
+                        </p>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--end u footer-->
+        <!--start b footer-->
+        <div class="row bfooter text-light text-center">
+            <span style="line-height: 50px;">DEVELOPED BY TANISHQ OJHA © <a href="http://www.techpile.in/" target="_blank"> Techpile Technology</a></span>
+        </div>
+        <!--end b footer-->
+    </div>
+    <script src="./project_files/bootstrap.bundle.js.download"></script>
+
+
+</body></html>
